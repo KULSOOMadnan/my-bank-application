@@ -1,6 +1,6 @@
 <i>
 <h1>Kulsoom Bank Console Application💰</h1>
-<h1>Overview⤵</h1>
+<h2>Overview⤵</h2>
 Welcome to the Kulsoom Bank Console Application! This project is a simple banking system implemented in Node.js, allowing users to create accounts, perform transactions, and check balances from the comfort of their command line interface.
 
 ## Features ✨
