@@ -1,6 +1,6 @@
 <i>
-# Kulsoom Bank Console Application💰
-## Overview⤵
+<h1>Kulsoom Bank Console Application💰</h1>
+<h1>Overview⤵</h1>
 Welcome to the Kulsoom Bank Console Application! This project is a simple banking system implemented in Node.js, allowing users to create accounts, perform transactions, and check balances from the comfort of their command line interface.
 
 ## Features ✨
@@ -8,7 +8,7 @@ Welcome to the Kulsoom Bank Console Application! This project is a simple bankin
 - Account creation with randomly generated PIN codes
 - Secure credit and debit transactions
 - Easy account balance checking
-- 
+
 ## Usage⬇️
 1. Upon launching the application, follow the on-screen instructions to create an account or perform transactions.
 2. Choose from the available options to credit, debit, or check your account balance.
