@@ -1,3 +1,4 @@
+<i>
 # Kulsoom Bank Console Application💰
 ## Overview⤵
 Welcome to the Kulsoom Bank Console Application! This project is a simple banking system implemented in Node.js, allowing users to create accounts, perform transactions, and check balances from the comfort of their command line interface.
@@ -27,7 +28,8 @@ After installation, you can run the application using the  command:**npX financi
 This project is licensed under the [ISC License](LICENSE).
 
 ## Author
-[KULSOOM ADNAN ✨]
+KULSOOM ADNAN ✨
+</i>
 
 
 
