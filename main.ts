@@ -1,4 +1,4 @@
-#! /usr/bin/env/node
+#! /usr/bin/env node
 
 import inquirer from "inquirer";
 import chalk from "chalk";
@@ -6,6 +6,7 @@ import chalk from "chalk";
 console.log(chalk.rgb(224, 176, 255)('\n\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'));
 console.log(chalk.rgb(244, 194, 194).italic.bold('\t\t\t----------------------WELCOME TO KULSOOM BANK 🏦----------------------'));
 console.log(chalk.rgb(224, 176, 255)('\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'));
+console.log(chalk.italic.rgb(255, 105, 180).bold('\t\t\t"I require certain info from you, in order to generate your account."\n'));
 
 
 
@@ -193,7 +194,7 @@ async function getuserInfo() {
 let Account = new bankAccount()
 
 async function transaction() {
-    
+    await  getuserInfo()
     let condition = true
     while (condition) {
         let trans = await inquirer.prompt(
@@ -201,15 +202,13 @@ async function transaction() {
                 {
                     name: "ans",
                     type: "list",
-                    message: chalk.rgb(244, 194, 194).italic("what kind of Action you want to  perform  :"),
-                    choices: ["Create Account","Credit","Debit","Check Balance","Exit"]
+                    message: chalk.rgb(244, 194, 194).italic("what kind of Action you want to perform  :"),
+                    choices: ["Credit","Debit","Check Balance","Exit"]
 
                 }
             ]
         )
-        if(trans.ans == "Create Account"){
-             await  getuserInfo()
-        }else if(trans.ans == "Debit"){
+         if(trans.ans == "Debit"){
             let Check = await inquirer.prompt(
                 {
                     name: "code",
